@@ -1,25 +1,15 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanstackDevtools } from '@tanstack/react-devtools'
-
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export const Route = createRootRoute({
   component: () => (
-    <>
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Header />
-      <Outlet />
-      <TanstackDevtools
-        config={{
-          position: 'bottom-left',
-        }}
-        plugins={[
-          {
-            name: 'Tanstack Router',
-            render: <TanStackRouterDevtoolsPanel />,
-          },
-        ]}
-      />
-    </>
+      <main className="flex-1 container mx-auto px-4 py-8">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   ),
 })
