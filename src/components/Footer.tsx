@@ -1,7 +1,7 @@
 // components/Footer.tsx
 export default function Footer() {
     return (
-      <footer className="border-t border-border/50 bg-background">
+      <footer className="border-t border-border/50 bg-background p-4">
         <div className="container mx-auto px-4 py-12">
           {/* Main footer content */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
@@ -16,7 +16,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="text-sm text-muted-foreground max-w-xs">
-                Building the future of business with intelligent software solutions.
+                To Innovation and Beyond
               </p>
             </div>
 

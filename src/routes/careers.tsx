@@ -5,17 +5,17 @@ export const Route = createFileRoute('/careers')({
   component: CareersPage,
 })
 
-function FloatingElement({ 
-  children, 
-  delay = 0, 
-  duration = 3000 
-}: { 
+function FloatingElement({
+  children,
+  delay = 0,
+  duration = 3000
+}: {
   children: React.ReactNode
   delay?: number
   duration?: number
 }) {
   return (
-    <div 
+    <div
       className="absolute animate-pulse"
       style={{
         animation: `float ${duration}ms ease-in-out infinite`,
@@ -27,10 +27,10 @@ function FloatingElement({
   )
 }
 
-function AnimatedCard({ 
-  children, 
-  delay = 0 
-}: { 
+function AnimatedCard({
+  children,
+  delay = 0
+}: {
   children: React.ReactNode
   delay?: number
 }) {
@@ -42,12 +42,11 @@ function AnimatedCard({
   }, [delay])
 
   return (
-    <div 
-      className={`transform transition-all duration-1000 ${
-        isVisible 
-          ? 'translate-y-0 opacity-100' 
+    <div
+      className={`transform transition-all duration-1000 ${isVisible
+          ? 'translate-y-0 opacity-100'
           : 'translate-y-8 opacity-0'
-      }`}
+        }`}
     >
       {children}
     </div>
@@ -56,10 +55,10 @@ function AnimatedCard({
 
 
 function CareersPage() {
-  useEffect(() => {}, [])
+  useEffect(() => { }, [])
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen p-8 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 -z-10">
         <FloatingElement delay={0} duration={4000}>
@@ -119,8 +118,8 @@ function CareersPage() {
               <p className="text-muted-foreground max-w-2xl">
                 If you'd like to collaborate or join us early, send a short note about yourself and how you'd like to contribute.
               </p>
-              <a 
-                href="mailto:hello@zekasolutions.com" 
+              <a
+                href="mailto:hello@zekasolutions.com"
                 className="text-foreground hover:text-primary transition-colors duration-200 text-lg font-medium underline decoration-1 underline-offset-4 hover:decoration-primary"
               >
                 Say hello →
@@ -131,12 +130,12 @@ function CareersPage() {
       </div>
 
       {/* Custom CSS for floating animation */}
-      <style>{`
-        @keyframes float {
+      <style>
+        {`@keyframes float {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           50% { transform: translateY(-20px) rotate(180deg); }
-        }
-      `}</style>
+        }`}
+      </style>
     </div>
   )
 }

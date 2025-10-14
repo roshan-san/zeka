@@ -37,7 +37,7 @@ function AnimatedCard({
 function App() {
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen p-4">
       {/* Hero section */}
       <section className="relative min-h-screen flex items-center">
         <div className="container mx-auto px-4">
@@ -92,7 +92,7 @@ function App() {
               <div className="space-y-12">
                 <div>
                   <h2 className="text-4xl font-light mb-6 text-foreground">
-                    Building the future, one product at a time
+                    To Innnovation and Beyond
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     We're not just another software company. We're builders, creators, and innovators 

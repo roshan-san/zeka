@@ -97,10 +97,9 @@ function FloatingElement({
 function ProductsPage() {
   const enginFeatures = [
     "Connect investors with promising startups",
-    "Streamlined fundraising process",
-    "Mentor matching and guidance",
-    "Real-time collaboration tools",
-    "Portfolio management dashboard"
+    "AI Based matchmaking",
+    "Comprehensive profiles for founders and contributors",
+    "Real-time collaboration tools and management dashboard",
   ]
 
   const marcusFeatures = [
@@ -132,9 +131,6 @@ function ProductsPage() {
           <h1 className="text-5xl md:text-7xl font-light mb-8 text-foreground">
             Our Products
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Building the future of business with intelligent software solutions
-          </p>
         </div>
 
         {/* Products grid */}
@@ -156,21 +152,6 @@ function ProductsPage() {
           />
         </div>
 
-        {/* Call to action */}
-        <div className="mt-20">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-medium text-foreground">Ready to get started?</h3>
-            <p className="text-muted-foreground max-w-2xl">
-              Contact us to learn more about our products and how they can help your business.
-            </p>
-            <a 
-              href="/contact" 
-              className="text-foreground hover:text-primary transition-colors duration-200 text-lg font-medium underline decoration-1 underline-offset-4 hover:decoration-primary"
-            >
-              Get in Touch →
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   )
