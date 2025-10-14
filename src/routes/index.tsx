@@ -128,9 +128,6 @@ function App() {
               <h2 className="text-4xl font-light mb-6 text-foreground">
                 Our products
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Two powerful platforms designed to transform how businesses operate and grow.
-              </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -164,8 +161,7 @@ function App() {
                   <h3 className="text-2xl font-medium text-foreground">Marcus Intelligence</h3>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  AI-first software development platform focused on testing with a multi-agent workforce. 
-                  Automate testing processes and ensure code quality at scale.
+                  QA testing for your APIs using AI. Automate testing, monitor performance, and ensure reliability
                 </p>
                 <Link 
                   to="/products" 
